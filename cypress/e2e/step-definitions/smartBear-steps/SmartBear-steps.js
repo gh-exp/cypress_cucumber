@@ -42,7 +42,7 @@ Then(/^validate all orders are deleted from the List of All Orders$/, () => {
 })
 
 Then(/^validate user sees "([^"]*)" message$/, (message) => {
-  smartB2.validateUserMessage(message)
+  smartB2.getEmptyOrderMessage().should('contain', message)
 })
 
 When(/^user clicks on "([^"]*)" menu item$/, (label) => {

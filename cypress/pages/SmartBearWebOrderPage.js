@@ -19,7 +19,7 @@ class SmartBearWeb extends SmartBear {
     return cy.get('#ctl00_MainContent_btnDelete')
   }
 
-  getUserMessage() {
+  getEmptyOrderMessage() {
     return cy.get('#ctl00_MainContent_orderMessage')
   }
 
@@ -33,9 +33,9 @@ class SmartBearWeb extends SmartBear {
 
   // Method
 
-  validateUserMessage(message) {
-    this.getUserMessage().should('contain', message)
-  }
+  // validateEmptyOrderMessage(message) {
+  //   this.getEmptyOrderMessage()
+  // }
 
   selectMenu(label) {
     this.getMenu().contains(label).click()
