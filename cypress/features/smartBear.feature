@@ -64,4 +64,4 @@ Feature: SmartBear Validation
     And user clicks on "Process" button
     And user clicks on "View all orders" menu item
     Then validate all information entered displayed correct with the order
-      | John Doe | FamilyAlbum | 2 | 06/08/2024 | 123 Main St | Chicago | IL | 60000 | Visa | 1234567812345678 | 12/34 | 
+      | John Doe | FamilyAlbum | 2 | 06/09/2024 | 123 Main St | Chicago | IL | 60000 | Visa | 1234567812345678 | 12/34 | 

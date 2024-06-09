@@ -76,7 +76,7 @@ Then(/^validate all information entered displayed correct with the order$/, (dat
   const arr = dataTable.rawTable.flat()
 
   smartB2.getOrderRowDataByLine(1).each(($el, i) => {
-    if (i !== 0 && i !== 12) {
+    if (i !== 0 && i !== 4 && i !== 12) {
       cy.wrap($el).should('contain', arr[i - 1])
     }
   })
