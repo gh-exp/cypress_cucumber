@@ -18,7 +18,23 @@ When(/^user enters password as "([^"]*)"$/, (password) => {
 })
 
 When(/^user clicks on "([^"]*)" button$/, (label) => {
-  smartB2.clickButton(label)
+  switch (label) {
+    case 'Login':
+      smartB.getLoginButton().click()
+      break
+    case 'Uncheck All':
+      smartB2.getUncheckAllButton().click()
+      break
+    case 'Check All':
+      smartB2.getCheckAllButton().click()
+      break
+    case 'Delete Selected':
+      smartB2.getDeleteAllButton().click()
+      break
+    case 'Process':
+      smartB2.getProcessButton().click()
+      break
+  }
 })
 
 Then(/^user should see "([^"]*)" message$/, (message) => {

@@ -1,6 +1,4 @@
-const SmartBearLogin = require('./SmartBearLoginPage')
-
-class SmartBearWeb extends SmartBearLogin {
+class SmartBearWeb {
   // Locators
 
   getCheckBoxes() {
